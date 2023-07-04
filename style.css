@@ -1,0 +1,407 @@
+:root{
+    
+    --primary-font: font-family: 'Open Sans', sans-serif;
+    --second-font: font-family: 'Josefin Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.Home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imgs/backround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    background-attachment: fixed;   /*pour fixe the BG*/
+}
+
+
+
+nav{
+    background-color: #171a1c;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+}
+
+.logo{
+    width: 190px;
+}
+nav .logo img{ 
+    width: 190px;
+   
+}
+
+ nav .nav-links ul li{  
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+nav .nav-links ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--second-font);
+    color: #f7bcf7;
+}
+
+nav .nav-links ul li a:hover{
+    color: yellow;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h2{
+    text-align: center;
+}
+.main h1{
+    margin-top: 50px;
+    font-size: 70px;
+    text-align: center;
+}
+.main .btn{
+    text-decoration: none;
+    font-family: var(--second-font);
+    font-size: 20px;
+    color: #f7bcf7;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.main .btn:hover{
+    background-color: #0a319c;
+    transform: scale(1.1);
+}
+
+
+
+/* ila bghiti dir humberger b l'image */
+
+/* nav .humberger{
+    display: none;
+    position: absolute;
+    width: 35px;
+    right: 50px;
+} */
+
+/* ila bghiti dir humberger b les bottons */
+
+.bar{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #f7bcf7;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s; 
+    margin: 5px;
+   
+}
+.humberger {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    float: right;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+    
+/* -----------------------------------------About-------------------------------------- */
+
+.About{
+    background-color: #171a1c;
+    padding: 2rem ;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.About .contenaire-images{
+    width: 50%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenaire-images img{
+    width: 100%;   
+}
+
+.About .contenaire-textes{
+    width: 100%;
+    margin-left: 10px;
+}
+
+span{
+    color: blue;
+}
+
+
+h1{
+    font-family: 'Josefin Sans';
+    letter-spacing: 3px;
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contenaire-textes p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+    font-size: 50px;
+}
+
+
+p{
+    color: #f7bcf7;
+    line-height: normal;
+    font-size: 28px;
+    text-align: start;
+    line-height: 2;
+}
+/* -----------------------------------Services---------------------- */
+    .cards{
+        background-color: #242323;
+        padding: 2rem ;
+    }
+
+    .titre{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 20px;
+        word-spacing: normal;
+        line-height: normal;
+    }
+    .content{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        background-color: #171a1c;
+        width: 20rem;
+        box-shadow: 0 5px 25px #f7bcf744;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        margin-top: 25px;
+        transition: 0.5s ease;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+    
+    .image img{
+        width: 100%;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .description-image{
+        text-align: center;
+    }
+
+    .description-image h3{
+        font-family: 'Josefin Sans' ;
+        color: rgb(113, 113, 235);
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px;
+        line-height: 1.3;
+    }
+
+
+/* -----------------------------------------Contact----------------------------- */
+    .contact{
+        background-color: #171a1c;
+    }
+
+    .contact .card{
+        background-color: rgb(233, 233, 98);
+    }
+
+    .contact p{
+        text-align: center;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .contact .icons{
+        color: blue;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+/* ------------------------------Footer----------------------- */
+    footer{
+        background-color: #242323;
+    }
+
+    .content-footer{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .content-footer h2{
+        font-size: 16px;
+        color: #fff;
+        font-family: 'Josefin Sans' ;
+    }
+
+    .content-footer h2 span{
+        font-size: 20px;
+        color: orange;
+        font-family: 'Josefin Sans' ;
+    }
+
+    #copyright{
+        color:#fff;
+        padding: 2px;
+        font-size: 10px;
+    }
+/* -----------------------------------Media Quiries----------------------------- */
+@media screen and (max-width: 870px) {
+
+    nav .nav-links{
+        position: absolute;
+        background-color: #171a1c;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;             
+        transition: all 0.5s ease;      /* ... */
+    }
+
+    .nav-links.active{                     /* ... */
+        margin-left: 0% ;                 /* ... */
+    }
+
+    nav .humberger{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .humberger.active .bar:nth-child(2){
+        opacity: 0;
+        transform: translateX(15px) 
+    }
+    nav .humberger.active .bar:nth-child(1){
+        transform: translateY(0px) rotate(45deg);
+    }
+    nav .humberger.active .bar:nth-child(3){
+        transform: translate(-3px, 3px) rotate(-45deg);
+    }
+   
+    nav .humberger.active .bar{
+        background-color: red;
+    }
+
+    nav .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .nav-links ul li{
+        margin: 30px 0;
+    }    
+   
+    nav .nav-links ul li a{
+        text-decoration: none;
+        color: #f7bcf7;
+    }
+    
+    nav .nav-links ul li a:hover{
+        color: yellow;
+    }
+
+/* --------------------About--------------------------------- */
+
+    .About .contenaire-images{
+        display: none;
+    }
+    #h1{
+        font-size: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 765px) {
+    .card{
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .description-image h3{
+        font-size: 20px;
+    }
+    .description-image p{
+        font-size: 16px;
+    }
+
+    .cards{
+        padding: 5px;
+    }
+    .card{
+        background-color: #171a1c;
+        width: 20rem;
+        box-shadow: 0 5px 25px #f7bcf744;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        margin-top: 25px;
+        transition: 0.5s ease;
+    }
+}
+
